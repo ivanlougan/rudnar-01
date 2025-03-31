@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
+import Slideshow from "../components/Slideshow";
 import LogoAnimation from "../components/LogoAnimation";
 
 const Home = () => {
@@ -26,7 +27,11 @@ const Home = () => {
     <>
       {showAnimation && <LogoAnimation onAnimationEnd={handleAnimationEnd} />}
       {showHeader && <Header />}
-      <main></main>
+      <main>
+        <h1>TANIO - SZYBKO - ANDZRZEJ</h1>
+        <Slideshow />
+        <h2>ZAPRASZAMY DO POBIERANIA NASZEGO NOWEGO KATALOGU!</h2>
+      </main>
     </>
   );
 };

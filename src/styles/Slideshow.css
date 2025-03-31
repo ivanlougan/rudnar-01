@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Syncopate:wght@400;700&display=swap");
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  font-family: "Syncopate", serif;
+  font-size: 45px;
+  color: rgb(238, 135, 0);
+}
+
+main h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  font-family: "Syncopate", serif;
+  font-size: 35px;
+  color: rgb(238, 135, 0);
+}
+
+.slideshow {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slideshow-img {
+  width: 100%;
+  max-width: 60vw;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
