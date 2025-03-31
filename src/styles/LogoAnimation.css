@@ -1,0 +1,97 @@
+/* .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  animation: fadeOut 1.5s ease-out 3.7s forwards;
+}
+
+/* .spanner img {
+  width: 100px;
+  animation: tighten 2s ease-in-out infinite;
+} */
+
+.spanner img {
+  width: 15vw;
+  height: auto;
+  background-color: black;
+  border-radius: 5px;
+  position: relative;
+  transform-origin: 80% 50%;
+  animation: tighten 1.4s ease-in-out forwards;
+}
+
+/* .company-name {
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards 1.5s;
+} */
+
+.company-name {
+  font-family: "Syncopate", serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #333;
+  opacity: 0;
+  /* margin-left: 15px; */
+  animation: fadeIn 0.8s ease-in-out 1s forwards;
+}
+
+@keyframes tighten {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25%,
+  75% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* @keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translate(-500px, -320px);
+    visibility: hidden;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1.5s ease-in-out forwards;
+} */
+
+.fade-out {
+  opacity: 0;
+  transform: translate(-1200px, -720px);
+  pointer-events: none; /* Prevents interactions after fade-out */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
