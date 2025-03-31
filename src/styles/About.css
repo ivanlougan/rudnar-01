@@ -1,0 +1,20 @@
+.about-section {
+  margin: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  padding: 20px 40px 40px;
+  max-width: 60%;
+  font-size: 30px;
+}
+
+.about-text h2 {
+  padding-top: 35px;
+  padding-bottom: 5px;
+}
+
+.about-image {
+  padding: 20px 5px;
+}

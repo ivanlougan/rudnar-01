@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+.footer {
+  margin-top: 10px;
+  background-color: #3f3f3f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

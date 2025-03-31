@@ -28,7 +28,7 @@ const Home = () => {
       {showAnimation && <LogoAnimation onAnimationEnd={handleAnimationEnd} />}
       {showHeader && <Header />}
       <main>
-        <h1>TANIO - SZYBKO - ANDZRZEJ</h1>
+        <h1>TANIO - SZYBKO - BEZPIECZNIE</h1>
         <Slideshow />
         <h2>ZAPRASZAMY DO POBIERANIA NASZEGO NOWEGO KATALOGU!</h2>
       </main>
