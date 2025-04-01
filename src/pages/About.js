@@ -7,7 +7,7 @@ const About = () => {
     <>
       <Header />
       <main>
-        <h1>RUDNAR - Narzędzia dla pokoleń</h1>
+        <h1>RUDNAR - NARZĘDZIA DLA POKOLEŃ</h1>
         <div className="about-section">
           <div className="about-image">
             <img src="images/tools.png" alt="Close-up of bolts and spanners" />
@@ -33,7 +33,7 @@ const About = () => {
           </div>
 
           <div className="about-text">
-            <h2>Dlaczego warto wybrać RUDNAR?</h2>
+            <h2>DLACZEGO WARTO WYBRAĆ RUDNAR?</h2>
             <ul>
               <li>Wieloletnie doświadczenie w branży narzędziowej.</li>
               <li>Szybka realizacja zamówień</li>

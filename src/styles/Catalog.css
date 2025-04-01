@@ -1,0 +1,38 @@
+.catalog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.catalog-image {
+  margin: 40px 10px 0;
+  border: 3px solid rgb(192, 64, 64);
+}
+
+.download-btn {
+  width: 260px;
+  height: 70px;
+  padding: 20px;
+  background-color: brown;
+  border: 3px solid darkred;
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: -2px 8px #998;
+}
+
+.download-btn:hover {
+  background-color: rgb(150, 23, 23);
+}
+
+.download-btn:active {
+  background-color: rgb(150, 23, 23);
+  box-shadow: 2px 5px #665;
+  transform: translateY(4px);
+}
+
+footer {
+  bottom: 0;
+}

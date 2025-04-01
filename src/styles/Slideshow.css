@@ -13,7 +13,7 @@ main h1 {
 main h2 {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 30px 0 5px;
   font-family: "Syncopate", serif;
   font-size: 41px;
   color: rgb(238, 135, 0);
