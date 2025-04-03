@@ -6,7 +6,7 @@ const Catalog = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="catalog-main">
         <h1>POBIERZ NASZ NOWY KATALOG NA ROK 2025 JUŻ TERAZ!</h1>
         <div className="catalog-container">
           <div className="catalog-image">

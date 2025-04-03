@@ -4,7 +4,10 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} RUDNAR | Created by Robert Zdeb</p>
+      <p>
+        © {new Date().getFullYear()} RUDNAR | Designed and created by Robert
+        Zdeb
+      </p>
     </footer>
   );
 };
