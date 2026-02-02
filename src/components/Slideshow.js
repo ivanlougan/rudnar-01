@@ -6,6 +6,7 @@ const images = [
   "/images/image2.png",
   "/images/image3.png",
   "/images/image4.png",
+  "/images/image5.png",
 ];
 
 const Slideshow = () => {
