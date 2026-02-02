@@ -24,11 +24,11 @@
   justify-content: space-evenly;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 11;
 }
 
 .logo-img {
-  max-width: 350px;
+  max-width: 220px;
   height: auto;
 }
 
@@ -45,4 +45,84 @@
 
 .nav-tags:hover {
   box-shadow: 1px 4px 7px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Toggle button - hidden on desktop */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #333;
+  position: relative;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 26px;
+  height: 2px;
+  background: #333;
+}
+.hamburger::before {
+  top: -8px;
+}
+.hamburger::after {
+  top: 8px;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+  .nav-bar {
+    padding: 8px 12px;
+    justify-content: space-between;
+  }
+
+  .logo-img {
+    max-width: 160px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* hide links by default on mobile */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 12px 16px 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    z-index: 9;
+  }
+
+  /* when nav-bar has .open, show the links */
+  .nav-bar.open .nav-links {
+    display: flex;
+  }
+
+  .nav-tags {
+    padding: 10px 6px;
+    font-size: 18px;
+    margin: 6px 0;
+  }
 }
