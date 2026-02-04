@@ -7,7 +7,7 @@ const Catalog = () => {
     <>
       <Header />
       <main className="catalog-main">
-        <h1>POBIERZ NASZ NOWY KATALOG NA ROK 2025 JUŻ TERAZ!</h1>
+        <h1>POBIERZ NASZ KATALOG  JUŻ TERAZ!</h1>
         <div className="catalog-container">
           <div className="catalog-image">
             <img src="images/gazetka.png" alt="catalog first page" />

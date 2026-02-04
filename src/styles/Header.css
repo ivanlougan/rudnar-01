@@ -51,15 +51,29 @@
 .nav-toggle {
   display: none;
   background: none;
+  background-color: transparent;
   border: none;
   padding: 8px;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
+.nav-toggle:hover,
+.nav-toggle:focus,
+.nav-toggle:active {
+  background-color: transparent;
+  outline: none;
+  box-shadow: 1px 4px 7px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+
+}
 .hamburger {
   display: block;
-  width: 26px;
-  height: 2px;
+  margin: 20px;
+  width: 29px;
+  height: 3px;
   background: #333;
   position: relative;
 }
@@ -68,8 +82,8 @@
   content: "";
   position: absolute;
   left: 0;
-  width: 26px;
-  height: 2px;
+  width: 29px;
+  height: 3px;
   background: #333;
 }
 .hamburger::before {
@@ -94,7 +108,7 @@
   }
 
   .logo-img {
-    max-width: 160px;
+    max-width: 300px;
   }
 
   .nav-toggle {

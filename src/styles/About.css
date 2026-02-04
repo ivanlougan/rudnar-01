@@ -32,7 +32,7 @@
   flex: 1 1 50%;
   box-sizing: border-box;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1.35rem;
   line-height: 1.5;
 }
 
@@ -56,5 +56,11 @@
 
   .about-text {
     font-size: 0.98rem;
+  }
+
+  /* make the page H1 a bit smaller on mobile (use fixed size to avoid percent inheritance issues) */
+  main h1 {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }

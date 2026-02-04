@@ -1,7 +1,7 @@
 .contact-container {
   max-width: 50%;
-  margin: 108px auto 0;
-  padding: 20px;
+  margin: 0px auto 0;
+  padding: 10px;
   background: #f8f8f8;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -9,7 +9,7 @@
 }
 
 .contact-container h1 {
-  padding: 0 0 50px;
+  padding: 0 0 30px;
 }
 
 h3 {

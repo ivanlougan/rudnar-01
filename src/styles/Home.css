@@ -1,0 +1,363 @@
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../../public/images/background-main.png') center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 60px 20px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.hero-titles h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.hero-titles h2 {
+  font-size: 2.9rem;
+  font-weight: bold;
+  color: rgb(255, 238, 0);
+  text-transform: uppercase;
+  margin: 10px 0 20px 0;
+  padding: 0;
+}
+
+.categories {
+    font-family: sans-serif;
+  list-style: none;
+  padding: 0 20px 0 0;
+  margin: 0 30px 0 0;
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.categories li {
+    font-size: 1.7rem;
+    font-weight:bolder;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 8px 10px;
+    padding: 0;
+}
+
+.hero-description {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hero-description p {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.hero-description p:first-child {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.brands {
+    list-style: disc;
+    font-weight: bolder;
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.brands li {
+    margin: 5px 0;
+    color: white;
+    break-inside: avoid;
+}
+
+.brands li::marker {
+    color: #FFD700;
+    font-size: 1.05em;
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.intro-section p {
+    font-size: 1.5rem;
+    font-family: "Syncopate", serif;
+    font-weight:bolder;
+    text-transform: uppercase;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Slideshow Section */
+.slideshow-section {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Catalog Section */
+.catalog-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+.catalog-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 20px;
+    min-height: 400px;
+    background-attachment: scroll;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .hero-titles h1 {
+    font-size: 2rem;
+  }
+
+  .hero-titles h2 {
+    font-size: 1.8rem;
+    margin: 10px 0 15px 0;
+  }
+
+  .categories {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+
+  .categories li {
+    font-size: 1rem;
+    margin: 6px 0;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
+  }
+
+  .hero-description p {
+    margin: 0 0 12px 0;
+  }
+
+  .brands {
+    font-size: 0.85rem;
+    padding-left: 18px;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    column-gap: 20px;
+  }
+
+  .intro-section {
+    padding: 30px 20px;
+  }
+
+  .intro-section p {
+    font-size: 1.2rem;
+  }
+
+  .catalog-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 15px;
+    min-height: 350px;
+  }
+
+  .hero-titles h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-titles h2 {
+    font-size: 1.3rem;
+    margin: 8px 0 12px 0;
+  }
+
+  .categories {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+
+  .categories li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+
+  .hero-description {
+    font-size: 0.8rem;
+  }
+
+  .hero-description p {
+    margin: 0 0 10px 0;
+  }
+
+  .brands {
+    font-size: 0.8rem;
+    padding-left: 16px;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    column-gap: 16px;
+  }
+
+  .intro-section {
+    padding: 25px 15px;
+  }
+
+  .intro-section p {
+    font-size: 1rem;
+  }
+
+  .catalog-section {
+    padding: 30px 15px;
+  }
+
+  .catalog-section h2 {
+    font-size: 1.2rem;
+  }
+}
+/* Battery Tools Section */
+.battery-tools-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.battery-tools-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.battery-tools-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.battery-tools-text p {
+  font-size: 1.2rem;
+  line-height: 1.26;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.battery-tools-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.battery-tools-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Mobile Responsive - Battery Tools Section */
+@media (max-width: 768px) {
+  .battery-tools-section {
+    padding: 40px 20px;
+  }
+
+  .battery-tools-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .battery-tools-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .battery-tools-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .battery-tools-image img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .battery-tools-section {
+    padding: 30px 15px;
+  }
+
+  .battery-tools-content {
+    gap: 20px;
+  }
+
+  .battery-tools-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .battery-tools-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .battery-tools-image img {
+    max-width: 100%;
+  }
+}
