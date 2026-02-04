@@ -52,14 +52,37 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s;
 }
 
-button:hover {
+button:hover:not(:disabled) {
   background-color: #0056b3;
 }
 
-.success-message {
-  color: green;
-  font-size: 18px;
-  font-weight: bold;
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
+
+.success-message {
+  color: #28a745;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
