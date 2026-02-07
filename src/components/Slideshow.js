@@ -15,7 +15,7 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 6000); // Change image every 4 seconds
+    }, 4000);
 
     return () => clearInterval(interval); // Cleanup when component unmounts
   }, []);
