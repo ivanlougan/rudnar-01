@@ -1,0 +1,124 @@
+.privacy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  line-height: 1.8;
+  color: #333;
+}
+
+.privacy-container h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.privacy-container .subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 30px 0;
+  font-style: italic;
+}
+
+.privacy-container section {
+  margin-top: 30px;
+}
+
+.privacy-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 30px 0 20px 0;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.privacy-container h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0 10px 0;
+}
+
+.privacy-container p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+.privacy-container ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.privacy-container li {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.privacy-container a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.privacy-container a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 30px 15px;
+  }
+
+  .privacy-container h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .privacy-container h2 {
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+  }
+
+  .privacy-container h3 {
+    font-size: 16px;
+  }
+
+  .privacy-container p,
+  .privacy-container li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-container {
+    padding: 20px 10px;
+  }
+
+  .privacy-container h1 {
+    font-size: 20px;
+  }
+
+  .privacy-container h2 {
+    font-size: 18px;
+  }
+
+  .privacy-container h3 {
+    font-size: 14px;
+  }
+
+  .privacy-container p,
+  .privacy-container li {
+    font-size: 14px;
+  }
+}
