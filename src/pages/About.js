@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-section">
           <div className="about-pair">
             <div className="about-image">
-              <img src="images/tools.png" alt="Close-up of bolts and spanners" />
+              <img src="images/tools.webp" alt="Close-up of bolts and spanners" />
             </div>
             <div className="about-text">
               <p>
@@ -55,7 +55,7 @@ const About = () => {
               </ul>
             </div>
             <div className="about-image">
-              <img src="images/spanners.png" alt="spanners hanging on the wall" />
+              <img src="images/spanners.webp" alt="spanners hanging on the wall" />
             </div>
           </div>
         </div>

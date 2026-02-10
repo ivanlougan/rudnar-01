@@ -57,10 +57,20 @@
   .about-text {
     font-size: 0.98rem;
   }
+  .about-text h2{
+    font-size: 1.8rem;
+    padding-top: 0;
+  }
+
+  main {
+    max-width: 100%;
+
+  }
 
   /* make the page H1 a bit smaller on mobile (use fixed size to avoid percent inheritance issues) */
   main h1 {
-    font-size: 20px;
+    font-size: 1.8rem;
     line-height: 1.2;
+      padding: 0 10px;
   }
 }

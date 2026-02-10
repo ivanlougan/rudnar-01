@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../../public/images/background-main.png') center/cover no-repeat;
+    url('../../public/images/background-main.webp') center/cover no-repeat;
   background-attachment: fixed;
   padding: 60px 20px;
   min-height: 500px;
@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -104,6 +105,7 @@
     padding: 40px 20px;
     text-align: center;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .intro-section p {
@@ -130,6 +132,8 @@
   text-align: center;
   background-color: #fff;
   width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .catalog-section h2 {
@@ -143,47 +147,50 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 40px 20px;
+    padding: 40px 0;
     min-height: 400px;
     background-attachment: scroll;
   }
-
+  
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 0;
+    gap: 10px;
+    padding: 0 20px;
   }
-
+  
   .hero-titles h1 {
-    font-size: 2rem;
+    padding-top: 70px;
+    font-size: 3rem;
   }
-
+  
   .hero-titles h2 {
-    font-size: 1.8rem;
-    margin: 10px 0 15px 0;
+    font-size: 4.8rem;
+    margin: 10px 0 0 0;
   }
-
+  
   .categories {
+    /* visibility: hidden; */
     display: block;
     float: none;
     text-align: left;
   }
 
   .categories li {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 6px 0;
   }
 
   .hero-description {
     font-size: 0.85rem;
   }
-
+  
   .hero-description p {
+    font-size: 1.35rem;
     margin: 0 0 12px 0;
   }
 
   .brands {
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding-left: 18px;
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -268,6 +275,7 @@
   background-color: #fff;
   padding: 60px 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .battery-tools-content {

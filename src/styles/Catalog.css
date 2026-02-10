@@ -94,6 +94,17 @@
   list-style-type: disc;
 }
 
+
+  /* Ensure the download button stays above the footer and doesn't overflow */
+  .download-btn {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 88px; /* give space so footer won't overlap */
+    position: relative;
+    z-index: 1;
+  }
 .catalog-features li {
   font-size: 19px;
   line-height: 1.8;
@@ -136,6 +147,7 @@
   }
   
   .catalog-header h1 {
+    max-width: 100%;
     font-size: 24px;
   }
   
@@ -144,6 +156,11 @@
   }
   
   .catalog-features li {
-    font-size: 14px;
+    font-size: 20px;
+  }
+
+  .download-btn {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
