@@ -27,7 +27,6 @@ const Catalog = () => {
               <li>Pełna oferta produktów</li>
               <li>Zdjęcia i opisy</li>
               <li>Format PDF — gotowy do pobrania</li>
-              <li>Aktualizacja 2026</li>
             </ul>
             <a href="catalog/catalog.pdf" download className="download-btn">
               KLIKNIJ TUTAJ I POBIERZ KATALOG
